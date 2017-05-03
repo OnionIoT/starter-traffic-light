@@ -20,13 +20,8 @@ red     = onionGpio.OnionGpio(RED_PIN)
 amber   = onionGpio.OnionGpio(AMBER_PIN)
 green   = onionGpio.OnionGpio(GREEN_PIN)
 
-# initialize to inputs in case there is external current to the pins
-red.setInputDirection()
-amber.setInputDirection()
-green.setInputDirection()
-
 # initialize to output
-red.setOutputDirection(ON)
+red.setOutputDirection(OFF)
 amber.setOutputDirection(OFF)
 green.setOutputDirection(OFF)
 
